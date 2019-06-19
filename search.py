@@ -24,8 +24,7 @@ def binary_search(arr, low, heigh, key):
 # 插值查找算法
 def interpolation_search(arr, low, heigh, key):
     if low < heigh:
-        interpolation = int((key - arr[low]) / (arr[heigh] - arr[low])\
-             * (heigh - low)) + low
+        interpolation = int((key - arr[low]) / (arr[heigh] - arr[low]) * (heigh - low)) + low
         if arr[interpolation] == key:
             return interpolation
         elif arr[interpolation] > key:
